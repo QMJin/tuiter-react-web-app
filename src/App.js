@@ -13,14 +13,6 @@ function App() {
           Welcome to Web Development Fall 2022
         </h1>
         <h2> This is the branch for assignment 2</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </h2h1a>
       </header>
     </div>
   );
