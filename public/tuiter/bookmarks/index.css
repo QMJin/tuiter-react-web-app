@@ -1,0 +1,103 @@
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-title-form{
+  padding-top: 12px;
+  color: white;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-handle-form{
+  color: rgb(47, 51, 54);
+  padding-top: 0px;
+  padding-bottom: 12px;
+  font-size: 13px;
+  border-bottom: 1px solid;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-grid-container{
+  display: grid;
+  grid-template-columns: 50px auto;
+}
+
+.wd-grid-item-left {
+  text-align: left;
+}
+
+.wd-grid-item-right {
+  text-align: left;
+}
+
+.wd-image-form {
+  border-radius: 50%;
+  width:48px;
+  height:48px;
+  margin-top: 12px;
+}
+
+.wd-author {
+  font-size: 15px;
+  color: white;
+  padding-left: 12px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.wd-float-left { float: left;}
+.wd-float-done { clear: both;}
+.wd-padding-done {padding: 0px;}
+
+.wd-author-id-date {
+  padding: 12px 0px 0px 12px;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-main-content {
+  font-size:15px;
+  color: white;
+  width: 506px;
+  text-align: left;
+  padding: 0px 16px 12px 12px;
+}
+
+.wd-bookmark-image {
+  width: 504px;
+  height: 264px;
+  border-radius: 10%;
+  padding-left: 12px;
+}
+
+.wd-bookmark-title {
+  font-size: 15px;
+  padding: 0px 12px;
+  color: white;
+  width: 504px;
+}
+
+.wd-bookmark-text-under-title {
+  width: 480px;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  padding: 0px 12px;
+}
+.wd-border-setting {
+  border-width: 1px;
+  border-style: solid;
+  border-color:rgb(47, 51, 54);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 506px;
+}
+
+.wd-nav-tabs .wd-liked {
+  color: #ff0000;
+}

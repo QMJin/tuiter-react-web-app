@@ -1,0 +1,31 @@
+body {
+  font-family: "Arial";
+  background-color: black;
+  color: white;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-padding-left {padding-left: 16px;}
+
+.wd-nav-tabs {
+  color: rgb(47, 51, 54);
+  font-size: 15px;
+}
+
+.wd-nav-tabs li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.wd-draw-separate-border {
+  border-top: 1px solid;
+  border-color: rgb(47, 51, 54);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+
