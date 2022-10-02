@@ -1,93 +1,50 @@
-.wd-input-form{
-  width: 600px;
-  font-size: 16px;
-  border-radius: 50px;
-  color: darkgray;
-  background-color: rgb(47, 51, 54);
+.wd-search-tuiter{
+  bottom: 27px;
+  left: 10px;
 }
 
-.wd-gear-form{
-  font-size: 28px;
+.wd-background-black {background-color: black;}
+.wd-background-grey {background-color: rgb(47, 51, 54);}
+.wd-background-white {background-color: white;}
+
+.wd-font-white {color: white;}
+.wd-font-grey {color: rgb(110, 118, 125);}
+.wd-font-black {color: black;}
+
+.wd-font-bold {font-weight: bold;}
+.wd-font-larger {font-size: 20px;}
+
+.wd-clear-border {border: none;}
+.wd-clear-padding {padding: 0px;}
+
+.wd-padding-to-top {padding-top:16px;}
+
+.wd-tab-selected {
+  border-bottom: 4px solid blue;
 }
 
-.wd-nav-tabs .wd-selected {
-  border-bottom: solid 4px rgb(29,161,242);
-  padding-bottom: 10px;
+
+.wd-column-border {
+  border-left: 2px solid rgb(47, 51, 54);
+  border-right: 2px solid rgb(47, 51, 54);
+  border-bottom: 0px;
+  border-top: 0px;
 }
 
-.wd-nav-tabs .wd-unselected {
-  color: rgb(110, 118, 125);
-  padding-left: 20px;
+.wd-row-border {
+  border-top: 2px solid rgb(47, 51, 54);
 }
 
-.wd-decoration-border {
-  border-width: 6px;
-  border-style: solid;
-  border-color: rgb(47, 51, 54);
-}
 
-.wd-suggested-post-without-author{
-  color: rgb(110,118,125);
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-size: 13px;
-}
+.wd-remove-underline{text-decoration: none}
 
-.wd-suggested-post-with-author {
-  display: inline;
-  color: white;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-size: 13px;
-}
-
-.wd-suggested-post-date {
-  display: inline;
-  font-size: 13px;
-  color: rgb(110,118,125);
+.wd-footnote{
+  font-family: "Helvetica Neue";
+  font-size: 14px;
   padding-left: 12px;
-  margin-top: 6px;
-  margin-bottom: 6px;
 }
 
-.wd-context {
-  font-size: 16px;
-  color: white;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-.wd-review-count {
-  font-size: 13px;
-  color: rgb(110,118,125);
-  margin-top: 6px;
-  margin-bottom: 12px;
-}
-
-.wd-image-form {
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-}
-
-.wd-grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.wd-grid-item-left {
-  text-align: left;
-  padding-top: 6px;
-}
-
-.wd-grid-item-right {
-  text-align: right;
-  padding-top: 0px;
-  padding-right: 16px;
-}
-
-.wd-image-form {
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
+.wd-text-in-pic-position {
+  padding-left: 12px;
+  padding-bottom: 0px;
 }

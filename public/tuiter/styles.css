@@ -1,10 +1,10 @@
 body {
   font-family: "Arial";
-  background-color: black;
+/*  background-color: black;
   color: white;
   border-left: 1px solid;
   border-right: 1px solid;
-  border-color: rgb(47, 51, 54);
+  border-color: rgb(47, 51, 54);*/
 }
 
 .wd-padding-left {padding-left: 16px;}

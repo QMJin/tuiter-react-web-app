@@ -3,81 +3,300 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
   <link href="index.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-  <a href="../../tuiter/navigation.html" class="wd-padding-left">Back</a>
-  <h1 class="wd-padding-left">Explore</h1>
+<body class="wd-background-black wd-font-white">
+  <div class="container pt-1">
+    <div class="row">
+      <div class="col-2">
+        <div class="list-group wd-list-group">
+          <a class="list-group-item list-group-item-action wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fab fa-tumblr"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+              </div>
+            </div>
+          </a>
+          <a href="home.html" class="list-group-item list-group-item-action
+                                      wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Home
+              </div>
+            </div>
+          </a>
+          <a href="index_section4.html" class="list-group-item list-group-item-action
+                                      wd-background-black wd-font-white
+                                      wd-font-bold wd-clear-border">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-hashtag"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Explore
+              </div>
+            </div>
+          </a>
+          <a href="notification.html" class="list-group-item list-group-item-action
+                                              wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Notifications
+              </div>
+            </div>
+          </a>
+          <a href="message.html" class="list-group-item list-group-item-action
+                                        wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Messages
+              </div>
+            </div>
+          </a>
+          <a href="../bookmarks/index.html" class="list-group-item list-group-item-action
+                                                   wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-bookmark"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Bookmarks
+              </div>
+            </div>
+          </a>
+          <a href="list.html" class="list-group-item list-group-item-action
+                                                   wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-list"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Lists
+              </div>
+            </div>
+          </a>
+          <a href="../../tuiter/profile.html" class="list-group-item list-group-item-action
+                                                     wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                Profile
+              </div>
+            </div>
+          </a>
+          <a href="more.html" class="list-group-item list-group-item-action
+                                      wd-background-black wd-font-white">
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-minus-circle"></i>
+              </div>
+              <div class="col-10 d-none d-xl-block d-xxl-block">
+                More
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="btn btn-primary w-100 mt-1 rounded-pill wd-font-bold">Tuit</button>
+      </div>
 
-  <div class="wd-grid-container wd-padding-left">
-    <span class="wd-grid-item-left">
-      <input class="wd-input-form" placeholder="&#x1F50D;  Search Tuiter"/>
-    </span>
-    <span class="wd-grid-item-right">
-      <a href="explore-settings.html" class="wd-gear-form">&#x2699;</a>
-    </span>
-  </div>
+      <div class="col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-6 wd-column-border">
+        <div class="row">
+          <div class="col-10">
+            <div class="position-relative">
+              <input class="ps-5 form-control rounded-pill wd-background-grey wd-font-grey wd-clear-border"
+                     placeholder="Search Tuiter"/>
+              <span class="position-absolute wd-search-tuiter wd-font-grey">
+                <i class="fas fa-search position-absolute"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-2">
+            <i class="fa fa-cog mt-2 wd-font-grey"></i>
+          </div>
+        </div>
 
-  <ul class="wd-nav-tabs wd-padding-left">
-    <li class="wd-selected">For you</li>
-    <li class="wd-unselected">Trending</li>
-    <li class="wd-unselected">COVID-19</li>
-    <li class="wd-unselected">News</li>
-    <li class="wd-unselected">Sports</li>
-    <li class="wd-unselected">Entertainment</li>
-  </ul>
+        <ul class="nav nav-tabs navbar-expand mt-1 mb-1 wd-clear-border">
+          <li class="nav-item">
+            <a class="nav-link text-nowrap wd-font-bold wd-font-grey"
+                     href="for-you.html">
+              For you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link wd-font-grey wd-font-bold" href="trending.html">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link wd-font-grey wd-font-bold" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link wd-font-grey wd-font-bold" href="sports.html">Sports</a>
+          </li>
+          <li class="nav-item d-none d-sm-none d-md-block wd-tab-selected">
+            <a class="nav-link wd-font-white wd-font-bold" href="entertainment.html">Entertainment</a>
+          </li>
+        </ul>
 
-  <div class="wd-decoration-border"></div>
+        <div class="position-relative wd-row-border">
+          <img src="../../images/myuniverse.jpeg" width="100%" style="overflow:hidden"/>
+          <div class="position-absolute bottom-0 left-0 wd-text-in-pic-position">
+            <h6>
+              Music &#183; Last Night
+            </h6>
+            <h3>
+              BTS and Coldplay release their new song, My Universe<i class="fad fa-planet-ringed"></i>
+            </h3>
+          </div>
+        </div>
 
-  <div class="wd-draw-separate-border">
-    <h3 class="wd-suggested-post-without-author wd-padding-left">Trending in Science</h3>
-    <h1 class="wd-context wd-padding-left">Starship</h1>
-    <h3 class="wd-review-count wd-padding-left">55.5K views</h3>
-  </div>
+        <ul class="list-group">
+          <li class="list-group-item wd-background-black wd-row-border">
+            <div class="row">
+              <div class="col-11">
+                <div class="text-secondary">
+                  Trending in R&B & soul
+                </div>
+                <div class="fw-bolder wd-font-white">
+                  R Kelly
+                </div>
+                <div class="text-secondary">
+                  18.2K Tweets
+                </div>
+              </div>
+              <div class="col-1 wd-font-grey">
+                <i class="float-end fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item wd-background-black">
+            <div class="row">
+              <div class="col-11">
+                <div class="text-secondary">
+                  Trending in R&B & soul
+                </div>
+                <div class="fw-bolder wd-font-white">
+                  Chole
+                </div>
+                <div class="text-secondary">
+                  Trending with <a class="wd-remove-underline" href="#">Halie</a>
+                </div>
+              </div>
+              <div class="col-1 wd-font-grey">
+                <i class="float-end fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item wd-background-black">
+            <div class="row">
+              <div class="col-9">
+                <div class="d-block">
+                  <span class="wd-font-white wd-font-bold">The Times <i class="fas fa-check-circle"></i></span>
+                  <span class="text-secondary"> &#183; September 24,2021</span>
+                </div>
+                <div class="fw-bolder d-block wd-font-white">
+                  Stanley Tucci: 'Food or sex? That's the cruellest qustions...'
+                </div>
+              </div>
+              <div class="col-3">
+                <img class="float-end rounded-3" src="../../images/thetimes.png" height="90px"/>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-  <div>
-    <h3 class="wd-suggested-post-without-author wd-padding-left">Sports - Trending</h3>
-    <h1 class="wd-context wd-padding-left">Joe Rogan</h1>
-    <h3 class="wd-review-count wd-padding-left">5,218 views</h3>
-  </div>
+      <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block d-xl-block">
+        <ul class="list-group rounded-4">
+          <li class="list-group-item fw-bolder wd-clear-border wd-background-grey wd-font-white wd-font-larger">
+            Who to follow
+          </li>
+          <li class="list-group-item wd-background-grey wd-clear-border">
+            <div class="row wd-font-white">
+              <div class="col-2">
+                <img class="rounded-circle float-start" src="../../images/babylonbee.png" height="50px"/>
+              </div>
+              <div class="col-6">
+                <div class="fw-bolder text-nowrap">
+                  The Babylon Bee <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="wd-font-grey">
+                  @TheBabylonBee
+                </div>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary w-100 rounded-pill float-end
+                               wd-background-white wd-font-black wd-font-bold wd-clear-border">
+                  Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item wd-background-grey wd-clear-border">
+            <div class="row wd-font-white">
+              <div class="col-2">
+                <img class="rounded-circle float-start" src="../../images/icon-j.png" height="50px"/>
+              </div>
+              <div class="col-6">
+                <div class="fw-bolder text-nowrap">
+                  Jack Posobiec <i class="fas fa-flag-usa"></i> <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="wd-font-grey">
+                  @Jack Posobiec
+                </div>
+              </div>
+              <div class="col-4">
+                <button class="btn btn-primary w-100 rounded-pill float-end
+                              wd-background-white wd-font-black wd-font-bold wd-clear-border">
+                  Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item wd-background-grey">
+            <div class="row wd-font-white">
+              <a class="wd-remove-underline" href="more.html">
+                Show more
+              </a>
+            </div>
+          </li>
+        </ul>
 
-  <div class="wd-grid-container wd-padding-left wd-draw-separate-border">
-      <span class="wd-grid-item-left">
-        <h3 class="wd-suggested-post-with-author">The New York Times</h3>
-        <h3 class="wd-suggested-post-date">&#183; Yesterday </h3>
-        <h1 class="wd-context">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h1>
-      </span>
-      <span class="wd-grid-item-right">
-        <img class="wd-image-form" src="the%20NY%20times.png"/>
-      </span>
-  </div>
+        <div class="row wd-padding-to-top wd-footnote wd-font-grey">
+          <div class="col">
+            Terms of Service
+          </div>
+          <div class="col">
+            Privacy Policy
+          </div>
+          <div class="col">
+            Cookie Policy
+          </div>
+        </div>
 
-  <div class="wd-grid-container wd-padding-left wd-draw-separate-border">
-      <span class="wd-grid-item-left">
-        <h3 class="wd-suggested-post-without-author">COVID-19 &#183; LIVE</h3>
-        <h1 class="wd-context">COVID-19:News and updates for Massachusetts</h1>
-      </span>
-    <span class="wd-grid-item-right">
-        <img class="wd-image-form" src="MA icon.jpeg"/>
-      </span>
-  </div>
-
-  <div class="wd-grid-container wd-padding-left wd-draw-separate-border">
-    <span class="wd-grid-item-left">
-      <h3 class="wd-suggested-post-with-author">Bloomberg Opinion</h3>
-      <h3 class="wd-suggested-post-date">&#183; Yesterday </h3>
-      <h1 class="wd-context">Thinking about getting a booster?Read this first</h1>
-    </span>
-    <span class="wd-grid-item-right">
-        <img class="wd-image-form" src="bloomberg.png"/>
-    </span>
-  </div>
-
-  <div class="wd-draw-separate-border wd-padding-left">
-    <h3 class="wd-suggested-post-without-author">Trending in United States</h3>
-    <h1 class="wd-context">Wonder Bread</h1>
-    <h3 class="wd-review-count">1,259 views</h3>
+        <div class="row wd-footnote wd-font-grey">
+          <div class="col-3">
+            Ads info
+          </div>
+          <div class="col-3">
+            More &#183;&#183;&#183;
+          </div>
+          <div class="col-6">
+            <i class="far fa-copyright"></i> 2022 Tuit
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
