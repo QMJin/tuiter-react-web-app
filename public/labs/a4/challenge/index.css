@@ -1,0 +1,50 @@
+.wd-search-tuiter{
+  bottom: 27px;
+  left: 10px;
+}
+
+.wd-background-black {background-color: black;}
+.wd-background-grey {background-color: rgb(47, 51, 54);}
+.wd-background-white {background-color: white;}
+
+.wd-font-white {color: white;}
+.wd-font-grey {color: rgb(110, 118, 125);}
+.wd-font-black {color: black;}
+
+.wd-font-bold {font-weight: bold;}
+.wd-font-larger {font-size: 20px;}
+
+.wd-clear-border {border: none;}
+.wd-clear-padding {padding: 0px;}
+
+.wd-padding-to-top {padding-top:16px;}
+
+.wd-tab-selected {
+  border-bottom: 4px solid blue;
+}
+
+
+.wd-column-border {
+  border-left: 2px solid rgb(47, 51, 54);
+  border-right: 2px solid rgb(47, 51, 54);
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.wd-row-border {
+  border-top: 2px solid rgb(47, 51, 54);
+}
+
+
+.wd-remove-underline{text-decoration: none}
+
+.wd-footnote{
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  padding-left: 12px;
+}
+
+.wd-text-in-pic-position {
+  padding-left: 12px;
+  padding-bottom: 0px;
+}
