@@ -1,4 +1,4 @@
-import WhoToFollowListItem from "./WhoToFollowListItem.js"
+
 import who from './who.js'
 import WhoToFollowListItem from './WhoToFollowListItem.js'
 
