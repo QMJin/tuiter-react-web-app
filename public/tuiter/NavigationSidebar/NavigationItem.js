@@ -1,6 +1,5 @@
 const navigationItem = (navigation) => {
-  if (window.location.pathname.substr(36,) == navigation.link.substr(3,)){
-    console.log(window.location.pathname)
+  if (window.location.pathname.includes(navigation.name)) {
     return(`
       <a href = ${navigation.link} class="list-group-item list-group-item-action active">
        <div class="row">
