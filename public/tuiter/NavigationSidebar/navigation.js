@@ -1,8 +1,8 @@
 const navigation = [
   {
     icon: 'fab fa-tumblr',
-    name:'',
-    link:'',
+    name: '',
+    link: '',
   },
   {
     icon: 'fas fa-home',
