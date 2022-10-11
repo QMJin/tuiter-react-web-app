@@ -1,9 +1,7 @@
 const navigationItem = (navigation) => {
   if (window.location.pathname.includes(navigation.name)) {
-    console.log(window.location.pathname)
-    console.log(navigation.name)
-    console.log(window.location.pathname.includes(navigation.name))
     return(`
+      <div>active</div>
       <a href = ${navigation.link} class="list-group-item list-group-item-action active">
        <div class="row">
           <div class="col-2">
