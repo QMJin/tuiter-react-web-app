@@ -21,11 +21,11 @@ const HomePostItem = (
       <li className="list-group-item">
         <div className="row">
 
-          <div className="col-1">
+          <div className="col-2">
             <img width={50} className="rounded-circle me-5" src={`/images/${post.icon}`}/>
           </div>
 
-          <div className="col-11">
+          <div className="col-10">
             <div className="row">
               <div className="col-11">
                 <span className="fw-bolder"> {post.username} <i className="bi bi-check-circle-fill"></i></span>
