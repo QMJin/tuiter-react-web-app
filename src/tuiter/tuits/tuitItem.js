@@ -1,6 +1,9 @@
 import React from "react";
+import "./index.css";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
 
-const tuitItem = (
+const TuitItem = (
     {
       tuit  = {
         "_id": 123,
@@ -18,24 +21,43 @@ const tuitItem = (
       }
     }
 ) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  }
   return(
       <li className="list-group-item">
         <div className="row">
-          <div className="col-2">
-            <img width={70} className="float-end rounded-3" src={`/images/${tuit.image}`}/>
+          <div className="col-auto">
+            <img width={50} className="rounded-circle float-end" src={`/images/${tuit.image}`}/>
           </div>
           <div className="col-10">
-            <div>{tuit.userName} {tuit.handle} {tuit.time}</div>
+            <div className = "row">
+              <div className = "col-11">
+                <span className="fw-bold"> {tuit.userName}</span>
+                <span> <i className="bi bi-check-circle-fill wd-blue-color"></i></span>
+                <span className="text-secondary"> {tuit.handle} &#183; {tuit.time} </span>
+              </div>
+              <div className= "col-1 float-end">
+                <i className="bi bi-x-lg float-end"
+                  onClick={() => deleteTuitHandler(tuit._id)}></i>
+              </div>
+            </div>
             <div>{tuit.tuit}</div>
-            <div className="row">
-              <div className="col">{tuit.replies}</div>
-              <div className="col">{tuit.retuits}</div>
-              <div className="col">{tuit.likes}</div>
-              <div className="col">share</div>
+            <div className="mt-3 row text-secondary">
+              <div className="col"><i className="bi bi-chat"></i>  {tuit.replies}</div>
+              <div className="col">&#x21C6; {tuit.retuits}</div>
+              {
+                tuit.liked && <div className="col">&#x2764; {tuit.likes}</div>
+              }
+              {
+                !tuit.liked && <div className="col">&#9825; {tuit.likes}</div>
+              }
+              <div className="col"><i className="bi bi-box-arrow-up"></i></div>
             </div>
           </div>
         </div>
       </li>
   );
 };
-export default tuitItem;
+export default TuitItem;

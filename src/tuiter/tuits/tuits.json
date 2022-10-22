@@ -16,7 +16,7 @@
   {
     "_id": 124,
     "topic": "Tesla",
-    "username": "Tesla",
+    "userName": "Tesla",
     "time": "4d",
     "title": "",
     "image": "tesla.jpeg",
@@ -30,7 +30,7 @@
   {
     "_id": 125,
     "topic": "Space",
-    "username": "SpaceX",
+    "userName": "SpaceX",
     "time": "2h",
     "title": "",
     "image": "spacex.jpeg",
