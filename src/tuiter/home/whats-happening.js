@@ -18,7 +18,7 @@ const WhatsHappening = () => {
         </div>
         <div className="col-10">
           <textarea
-              alue={whatsHappening}
+              value={whatsHappening}
               placeholder="What's happening?"
               className="form-control border-0"
               onChange={(event) => setWhatsHappening(event.target.value)}>

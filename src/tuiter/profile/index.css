@@ -1,0 +1,17 @@
+.wd-nudge-up {
+  bottom: -65px;
+  left: 25px;
+}
+
+.wd-nudge-down {
+  bottom: -45px;
+  right: 15px;
+}
+
+.wd-padding-to-top-lg{
+  padding-top: 80px;
+}
+
+.wd-padding-to-top{
+  padding-top: 20px;
+}

@@ -1,0 +1,15 @@
+[
+  { "_id": 123,
+    "firstName": "James Webb",
+    "lastName": "Space Telescope",
+    "handle": "@nasa",
+    "profilePicture": "webb_icon.jpeg",
+    "bannerPicture": "webb_banner.png",
+    "bio": "A space telescope which conducts infrared astronomy",
+    "website": "https://webb.nasa.gov/content/about/launch.html",
+    "location": "Lagrange point",
+    "dateOfBirth": "12/25/2021",
+    "dateJoined": "12/25/2021",
+    "followingCount": 123,
+    "followersCount": 234 }
+]
