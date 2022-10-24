@@ -8,10 +8,24 @@
   right: 15px;
 }
 
+.wd-bt-nudge-up {
+  top: -30px;
+  right: 25px;
+}
+
+
 .wd-padding-to-top-lg{
   padding-top: 80px;
 }
 
 .wd-padding-to-top{
   padding-top: 20px;
+}
+
+.wd-label-above-text {
+  margin-left: 12px;
+}
+
+.wd-textarea-border{
+  border:1px solid lightgrey;
 }

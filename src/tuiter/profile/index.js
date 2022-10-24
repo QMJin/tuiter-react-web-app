@@ -8,7 +8,6 @@ const ProfileComponent = () => {
   return(
         profileArray.map(profile =>
           <ProfileItem
-             key={profile._id}
              profile={profile}/>)
   )
 };

@@ -45,6 +45,9 @@ const ProfileItem = ({
           <i className="bi bi-balloon"></i> {profile.dateOfBirth} &nbsp;
           <i className="bi bi-calendar3"></i> {profile.dateJoined} &nbsp;
         </div>
+        <div className="wd-padding-to-top text-secondary">
+          {profile.website}
+        </div>
         <div className="wd-padding-to-top">
           <span className="fw-bold">{profile.followingCount}</span>&nbsp;
           <span className="text-secondary">Following</span>&nbsp;&nbsp;&nbsp;&nbsp;
