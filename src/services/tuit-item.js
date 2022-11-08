@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "./tuits-thunks";
 
 const TuitItem = (
     {
@@ -23,7 +23,16 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
+  }
+  const likeTuit = (tuit) => {
+    const updatedTuit = {
+      ...tuit,
+      liked: true,
+      likes: typeof tuit.likes === 'undefined' ? 1 : tuit.likes + 1
+    }
+    console.log(updatedTuit)
+    dispatch(updateTuitThunk(updatedTuit));
   }
   return(
       <li className="list-group-item">
@@ -39,20 +48,18 @@ const TuitItem = (
                 <span className="text-secondary"> {tuit.handle} &#183; {tuit.time} </span>
               </div>
               <div className= "col-1 float-end">
-               {/* <i className="bi bi-x-lg float-end"
-                  onClick={() => deleteTuitHandler(tuit._id)}></i>*/}
+               <i className="bi bi-x-lg float-end"
+                  onClick={() => {dispatch(deleteTuitThunk(tuit._id))}}></i>
               </div>
             </div>
             <div>{tuit.tuit}</div>
             <div className="mt-3 row text-secondary">
               <div className="col"><i className="bi bi-chat"></i>  {tuit.replies}</div>
               <div className="col">&#x21C6; {tuit.retuits}</div>
-              {
-                tuit.liked && <div className="col">&#x2764; {tuit.likes}</div>
-              }
-              {
-                !tuit.liked && <div className="col">&#9825; {tuit.likes}</div>
-              }
+              <div className="col">
+                  <i onClick={() => {likeTuit(tuit)}}>
+                      &#9825; {tuit.likes}</i>
+              </div>
               <div className="col"><i className="bi bi-box-arrow-up"></i></div>
             </div>
           </div>
