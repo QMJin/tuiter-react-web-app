@@ -57,8 +57,8 @@ const TuitItem = (
               <div className="col"><i className="bi bi-chat"></i>  {tuit.replies}</div>
               <div className="col">&#x21C6; {tuit.retuits}</div>
               <div className="col">
-                {!tuit.liked && <i onClick={() => {likeTuit(tuit)}}>
-                  &#9825; {tuit.likes}</i>}
+                <i onClick={() => {likeTuit(tuit)}}>
+                  &#9825; {tuit.likes}</i>
               </div>
               <div className="col"><i className="bi bi-box-arrow-up"></i></div>
             </div>
