@@ -13,7 +13,7 @@ function App() {
            {/* <Route index element={<Labs/>}/>*/}
            {/*<Route path="/a7" element={<Assignment7/>}/>*/}
             <Route index element={<Tuiter/>}/>
-          {/*  <Route path="/tuiter/*" element={<Tuiter/>}/>*/}
+            <Route path="/tuiter/*" element={<Tuiter/>}/>
           </Routes>
         </div>
       </BrowserRouter>
