@@ -34,6 +34,15 @@ const TuitItem = (
     console.log(updatedTuit)
     dispatch(updateTuitThunk(updatedTuit));
   }
+  const unlikeTuit = (tuit) => {
+    const updatedTuit = {
+      ...tuit,
+      liked: false,
+      likes: typeof tuit.likes === 'undefined' ? 1 : tuit.likes - 1
+    }
+    console.log(updatedTuit)
+    dispatch(updateTuitThunk(updatedTuit));
+  }
   return(
       <li className="list-group-item">
         <div className="row">
@@ -57,10 +66,19 @@ const TuitItem = (
               <div className="col"><i className="bi bi-chat"></i>  {tuit.replies}</div>
               <div className="col">&#x21C6; {tuit.retuits}</div>
               <div className="col">
-                <i onClick={() => {likeTuit(tuit)}}>
-                  &#9825; {tuit.likes}</i>
+                { !tuit.liked &&
+                  <button onClick={() => likeTuit(tuit)}>
+                    like
+                  </button>
+                }
+                { tuit.liked &&
+                  <button onClick={() => unlikeTuit(tuit)}>
+                    unlike
+                  </button>
+                }
+                  {tuit.likes}
               </div>
-              <div className="col"><i className="bi bi-box-arrow-up"></i></div>
+              {/*<div className="col"><i className="bi bi-box-arrow-up"></i></div>*/}
             </div>
           </div>
         </div>
